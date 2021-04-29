@@ -1,1 +1,1 @@
-web: gunicorn money_handler_api.wsgi
+web: gunicorn money_handler.wsgi
