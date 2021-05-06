@@ -10,4 +10,4 @@ WORKDIR /app
 
 ADD . .
 
-CMD ["gunicorn", "money_handler_api.wsgi:application", "--bind", "0.0.0.0:$PORT"]
+CMD python3 manage.py migrate && gunicorn money_handler.wsgi:application --bind 0.0.0.0:$PORT
