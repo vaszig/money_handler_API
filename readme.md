@@ -14,3 +14,6 @@ Run the migrations
 
 ## How to run tests
 >`python manage.py test`
+
+## Usage
+API can be used via _https://money-handler-api.herokuapp.com/_ (It returns the current balance)
