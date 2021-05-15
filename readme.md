@@ -22,7 +22,7 @@ Run the migrations
 
 ## CI/CD - Github action
 
-There is a CI/CD pipeline on every push to master branch which tests the code, pushes it to dockerhub and deploys it to heroku if the all previous jobs have passed. For this the file cicd.yml must be in the root of the project (/.github/workflows/cicd.yml)
+There is a CI/CD pipeline on every push to master branch which tests the code, pushes it to dockerhub and deploys it to heroku if the all previous jobs have passed. The file cicd.yml must be in the root of the project (/.github/workflows/cicd.yml)
 
 ## Usage
 
