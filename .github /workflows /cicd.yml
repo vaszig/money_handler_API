@@ -23,9 +23,11 @@ jobs:
           DEBUG: ${{secrets.DEBUG_VALUE}}
           ALLOWED_HOSTS: ${{secrets.ALLOWED_HOSTS}}
       - run: |
+          echo $DEBUG
           export DEBUG=DEBUG
           export SECRET_KEY=SECRET_KEY
           export ALLOWED_HOSTS=ALLOWED_HOSTS
+          echo $DEBUG
           python manage.py test
   build:
     name: build
